@@ -1,0 +1,29 @@
+{Цикл While. Написать фрагмент программы, вычисляющей количество чётных цифр в числе.}
+
+var
+
+   a, chet, nechet : integer;
+
+   
+
+begin
+
+   write('введите число: ');
+
+   readln(a);
+
+   while a > 0 do begin
+
+       if (a mod 10) mod 2 = 0then chet += 1 else nechet += 1;
+
+       a := a div 10;
+
+   end;
+
+   writeln('четных: ', chet);
+
+   writeln('не четных: ', nechet);
+
+end.
+
+Подробнее - на Znanija.com - https://znanija.com/task/31647562#readmore
