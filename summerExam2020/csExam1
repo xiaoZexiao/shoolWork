@@ -1,0 +1,22 @@
+
+{Вычисление определённого интеграла методом трапеций 通过梯形法计算一定的积分}
+program test1;
+
+const a=6;
+      b=8;
+      n=150;
+var h:real;
+s:real;
+i:integer;
+function f(x:real):real;
+begin
+f:=x*x+8;
+end;
+begin
+h:=(b-a)/n;
+s:=(f(a)+f(b))/2;
+for i:=1 to n-1 do
+s:=s+f(a+i*h);
+s:=s*h;
+write('S=',s:0:3);
+end.
